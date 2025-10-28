@@ -3,14 +3,14 @@
 ### Download FPGA-SoC-Linux-Kernel-6.12
 
 ```console
-shell$ wget https://github.com/ikwzm/FPGA-SoC-Linux-Kernel-6.12/archive/refs/tags/6.12.55-armv7-fpga-1.tar.gz
-shell$ tar xfz 6.12.55-armv7-fpga-1.tar.gz
+shell$ wget https://github.com/ikwzm/FPGA-SoC-Linux-Kernel-6.12/archive/refs/tags/6.12.55-armv7-fpga-2.tar.gz
+shell$ tar xfz 6.12.55-armv7-fpga-2.tar.gz
 ```
 
 ### Setup parameters
 
 ```console
-shell$ export LINUX_KERNEL_REPOSITORY=FPGA-SoC-Linux-Kernel-6.12-6.12.55-armv7-fpga-1
+shell$ export LINUX_KERNEL_REPOSITORY=FPGA-SoC-Linux-Kernel-6.12-6.12.55-armv7-fpga-2
 shell$ export LINUX_KERNEL_VERSION=6.12.55
 shell$ export LINUX_KERNEL_RELEASE=$LINUX_KERNEL_VERSION-armv7-fpga
 ```
