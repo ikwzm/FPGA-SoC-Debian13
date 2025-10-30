@@ -15,15 +15,14 @@ shell$ cd FPGA-SoC-Debian13-1.0.0
  * tareget/zynq-zybo/
    + boot/
      - boot.bin                                                      : Stage 1 Boot Loader(U-boot-spl)
-     - design_1_wrapper.bit                                          : FPGA configuration file (Xilinx Bitstream Format)
      - u-boot.img                                                    : Stage 2 Boot Loader(U-boot)
      - uEnv.txt                                                      : U-Boot environment variables for linux boot
      - devicetree-6.12.55-armv7-fpga-zynq-zybo.dtb                   : Linux Device Tree Blob   
      - devicetree-6.12.55-armv7-fpga-zynq-zybo.dts                   : Linux Device Tree Source
  * files/
    + vmlinuz-6.12.55-armv7-fpga-2                                    : Linux Kernel Image
- * debian12-rootfs-vanilla.tgz.files/                                : Debian11 Root File System
-   + x00 .. x08                                                      : (splited files)
+ * debian13-rootfs-vanilla.tgz.files/                                : Debian13 Root File System
+   + x00 .. x09                                                      : (splited files)
  * debian/
    + linux-image-6.12.55-armv7-fpga_6.12.55-armv7-fpga-2_armhf.deb   : Linux Image Package
    + linux-headers-6.12.55-armv7-fpga_6.12.55-armv7-fpga-2_armhf.deb : Linux Headers Package

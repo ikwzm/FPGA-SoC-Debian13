@@ -22,8 +22,8 @@ shell$ cd FPGA-SoC-Debian13-1.0.0
      - u-boot.img                                                    : Stage 2 Boot Loader(U-boot)
  * files/
    + vmlinuz-6.12.55-armv7-fpga-2                                    : Linux Kernel Image
- * debian12-rootfs-vanilla.tgz.files/                                : Debian11 Root File System
-   + x00 .. x08                                                      : (splited files)
+ * debian13-rootfs-vanilla.tgz.files/                                : Debian13 Root File System
+   + x00 .. x09                                                      : (splited files)
  * debian/
    + linux-image-6.12.55-armv7-fpga_6.12.55-armv7-fpga-2_armhf.deb   : Linux Image Package
    + linux-headers-6.12.55-armv7-fpga_6.12.55-armv7-fpga-2_armhf.deb : Linux Headers Package
