@@ -77,3 +77,29 @@ Build
 * [Build Linux Kernel](doc/build/linux-kernel-6.12.55.md)
 * [Build Debian13 RootFS](doc/build/debian13-rootfs.md)
 
+Other Projects
+------------------------------------------------------------------------------------
+
+* Debian12 Boot Image (U-boot, Linux Kernel 6.1.xx, Debian12 RootFS) for FPGA-SoC
+  + https://github.com/ikwzm/FPGA-SoC-Debian12
+* Debian9-11 Boot Image (U-boot, Linux Kernel, Debian12 RootFS) for FPGA-SoC
+  + https://github.com/ikwzm/FPGA-SoC-Linux
+* Linux Kernel (v6.12.x) Image and Device Trees for FPGA-SoC.
+  + https://github.com/ikwzm/FPGA-SoC-Linux-Kernel-6.12
+* Linux Kernel (v6.1.x) Image and Device Trees for FPGA-SoC.
+  + https://github.com/ikwzm/FPGA-SoC-Linux-Kernel-6.1
+
+Examples
+------------------------------------------------------------------------------------
+
+* FPGA-SoC-Linux example(1) binary and project and test code
+  + https://github.com/ikwzm/FPGA-SoC-Linux-Example-1-ZYBO
+  + https://github.com/ikwzm/FPGA-SoC-Linux-Example-1-ZYBO-Z7
+  + https://github.com/ikwzm/FPGA-SoC-Linux-Example-1-PYNQ-Z1
+  + https://github.com/ikwzm/FPGA-SoC-Linux-Example-1-DE10-Nano
+  + https://github.com/ikwzm/FPGA-SoC-Linux-Example-1-DE0-Nano-SoC
+* Sample project using BRAM on PL for ZYBO-Z7
+  + https://github.com/ikwzm/PLBRAM-ZYBO-Z7
+* Quantized Convolution (strip) binary and project and test code
+  + https://github.com/ikwzm/QCONV-STRIP-ZYBO-Z7
+  + https://github.com/ikwzm/QCONV-STRIP-DE10-Nano
