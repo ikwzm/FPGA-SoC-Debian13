@@ -6,11 +6,11 @@ Overview
 
 ### Introduction
 
-This Repository provides a Linux Boot Image(U-boot, Kernel, Debian 13 RootFS) for FPGA-SoC.
+This Repository provides a Linux Boot Image(U-boot, Kernel, Debian13 RootFS) for FPGA-SoC.
 
 ### Note
 
-**The Linux Kernel Image and Debian12 RootFS provided in this repository is not official.**
+**The Linux Kernel Image and Debian13 RootFS provided in this repository is not official.**
 
 **I modified it to my liking. Please handle with care.**
 
@@ -29,22 +29,44 @@ This Repository provides a Linux Boot Image(U-boot, Kernel, Debian 13 RootFS) fo
   + Customized boot by uEnv.txt
   + Customized boot by boot.scr
   + Enable bootmenu
-* Linux Kernel Version v6.12.xx
+* Linux Kernel Version v6.12.55
   + Available in both Xilinx-Zynq-7000 and Altera-SoC in a single image
   + Enable Device Tree Overlay
   + Enable FPGA Manager
   + Enable FPGA Bridge
   + Enable FPGA Reagion
   + Patch for issue #3(USB-HOST does not work with PYNQ-Z1)
-* Debian13(trixie) Root File System
+* Debian13.1(trixie) Root File System
   + Installed build-essential
   + Installed device-tree-compiler
   + Installed ruby ruby-msgpack ruby-serialport
-  + Installed python python3 python3-numpy msgpack-rpc-python
+  + Installed python3 python3-numpy msgpack-rpc-python
   + Installed u-boot-tools
   + Installed Other package list -> [files/debian13-dpkg-list.txt](files/debian13-dpkg-list.txt)
 * FPGA Device Drivers and Services
   + [dtbocfg    (Device Tree Blob Overlay Configuration File System)](https://github.com/ikwzm/dtbocfg)
   + [fclkcfg    (FPGA Clock Configuration Device Driver)](https://github.com/ikwzm/fclkcfg)
   + [udmabuf    (User space mappable DMA Buffer)](https://github.com/ikwzm/udmabuf)
+
+Install
+------------------------------------------------------------------------------------
+
+* Install U-Boot and Linux to SD-Card
+  + [ZYBO](doc/install/zynq-zybo.md)
+  + [ZYBO-Z7](doc/install/zynq-zybo-z7.md)
+  + [PYNQ-Z1](doc/install/zynq-pynqz1.md)
+  + [DE0-Nano-SoC](doc/install/de0-nano-soc.md)
+  + [DE10-Nano](doc/install/de10-nano.md)
+* [Install Device Drivers and Services](doc/install/device-drivers.md)
+
+Build 
+------------------------------------------------------------------------------------
+
+* [Build U-boot for ZYBO](doc/build/u-boot-zynq-zybo.md)
+* [Build U-boot for ZYBO-Z7](doc/build/u-boot-zynq-zybo-z7.md)
+* [Build U-boot for PYNQ-Z1](doc/build/u-boot-zynq-pynqz1.md)
+* [Build U-boot for DE0-Nano-SoC](doc/build/u-boot-de0-nano-soc.md)
+* [Build U-boot for DE10-Nano](doc/build/u-boot-de10-nano.md)
+* [Build Linux Kernel](doc/build/linux-kernel-6.12.55.md)
+* [Build Debian13 RootFS](doc/build/debian13-rootfs.md)
 
