@@ -48,3 +48,32 @@ This Repository provides a Linux Boot Image(U-boot, Kernel, Debian 13 RootFS) fo
   + [fclkcfg    (FPGA Clock Configuration Device Driver)](https://github.com/ikwzm/fclkcfg)
   + [udmabuf    (User space mappable DMA Buffer)](https://github.com/ikwzm/udmabuf)
 
+Release
+------------------------------------------------------------------------------------
+
+| Release | Released   | Debian Version | Linux Kernel Version  | Release Tag |
+|:--------|:-----------|:---------------|:----------------------|:------------|
+| v1.0.0  | 2025-10-30 | Debian 13.1    | 6.12.55-armv7-fpga-1  | [v1.0.0](https://github.com/ikwzm/FPGA-SoC-Debian13/tree/v1.0.0)
+
+Install (v1.0.0)
+------------------------------------------------------------------------------------
+
+* Install U-Boot and Linux to SD-Card
+  + [ZYBO](doc/install/zynq-zybo.md)
+  + [ZYBO-Z7](doc/install/zynq-zybo-z7.md)
+  + [PYNQ-Z1](doc/install/zynq-pynqz1.md)
+  + [DE0-Nano-SoC](doc/install/de0-nano-soc.md)
+  + [DE10-Nano](doc/install/de10-nano.md)
+* [Install Device Drivers and Services](doc/install/device-drivers.md)
+
+Build 
+------------------------------------------------------------------------------------
+
+* [Build U-boot for ZYBO](doc/build/u-boot-zynq-zybo.md)
+* [Build U-boot for ZYBO-Z7](doc/build/u-boot-zynq-zybo-z7.md)
+* [Build U-boot for PYNQ-Z1](doc/build/u-boot-zynq-pynqz1.md)
+* [Build U-boot for DE0-Nano-SoC](doc/build/u-boot-de0-nano-soc.md)
+* [Build U-boot for DE10-Nano](doc/build/u-boot-de10-nano.md)
+* [Build Linux Kernel](doc/build/linux-kernel-6.12.55.md)
+* [Build Debian13 RootFS](doc/build/debian13-rootfs.md)
+
