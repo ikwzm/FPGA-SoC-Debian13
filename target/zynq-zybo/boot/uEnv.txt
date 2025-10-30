@@ -58,5 +58,6 @@ fpga_set_cmd=run slcr_unlock_cmd && mw.l 0xF8000170 0x00100A00 && run slcr_lock_
 ########################################################################
 # Boot Menu
 ########################################################################
-bootmenu_0=Boot Default(with FPGA program)=env run fpga_load_cmd && env run fpga_set_cmd && boot
-bootmenu_1=Boot linux-6.12.55-armv7-fpga=env set external_env_file uEnv-linux-6.12.55-armv7-fpga.txt && env run external_env_boot
+bootmenu_0=Boot Default=boot
+bootmenu_1=Boot Default(with FPGA program)=env run fpga_load_cmd && env run fpga_set_cmd && boot
+bootmenu_2=Boot linux-6.12.55-armv7-fpga=env set external_env_file uEnv-linux-6.12.55-armv7-fpga.txt && env run external_env_boot
