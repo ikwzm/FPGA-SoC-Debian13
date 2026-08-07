@@ -53,9 +53,10 @@ Release
 
 | Release | Released   | Debian Version | Linux Kernel Version  | Release Tag |
 |:--------|:-----------|:---------------|:----------------------|:------------|
+| v6.0.0  | 2026-8-8   | Debian 13.6    | 6.12.100-armv7-fpga-1 | [v6.0.0](https://github.com/ikwzm/FPGA-SoC-Debian13/tree/v6.0.0)
 | v1.0.0  | 2025-10-30 | Debian 13.1    | 6.12.55-armv7-fpga-1  | [v1.0.0](https://github.com/ikwzm/FPGA-SoC-Debian13/tree/v1.0.0)
 
-Install (v1.0.0)
+Install (v6.0.0)
 ------------------------------------------------------------------------------------
 
 * Install U-Boot and Linux to SD-Card
@@ -74,7 +75,7 @@ Build
 * [Build U-boot for PYNQ-Z1](doc/build/u-boot-zynq-pynqz1.md)
 * [Build U-boot for DE0-Nano-SoC](doc/build/u-boot-de0-nano-soc.md)
 * [Build U-boot for DE10-Nano](doc/build/u-boot-de10-nano.md)
-* [Build Linux Kernel](doc/build/linux-kernel-6.12.55.md)
+* [Build Linux Kernel](doc/build/linux-kernel-6.12.100.md)
 * [Build Debian13 RootFS](doc/build/debian13-rootfs.md)
 
 Other Projects
