@@ -2,7 +2,7 @@
 
 #### Prepare Linux Kernel Image Debian Package
 
-[./doc/build/linux-kernel-6.12.55.md](linux-kernel-6.12.55.md)
+[./doc/build/linux-kernel-6.12.100.md](linux-kernel-6.12.100.md)
 
 #### Prepare the necessary packages
 
