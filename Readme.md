@@ -67,6 +67,6 @@ Build
 * [Build U-boot for PYNQ-Z1](doc/build/u-boot-zynq-pynqz1.md)
 * [Build U-boot for DE0-Nano-SoC](doc/build/u-boot-de0-nano-soc.md)
 * [Build U-boot for DE10-Nano](doc/build/u-boot-de10-nano.md)
-* [Build Linux Kernel](doc/build/linux-kernel-6.12.55.md)
+* [Build Linux Kernel](doc/build/linux-kernel-6.12.100.md)
 * [Build Debian13 RootFS](doc/build/debian13-rootfs.md)
 
