@@ -20,26 +20,26 @@ root@debian-fpga:~#
 
 #### Install Kernel Image Package
 
-Since linux-image-6.12.55-armv7-fpga_6.12.55-armv7-fpga-1_armhf.deb is already pre-installed in debian12-rootfs-vanilla, this The process can be omitted.
+Since linux-image-6.12.115-armv7-fpga_6.12.115-armv7-fpga-1_armhf.deb is already pre-installed in debian13-rootfs-vanilla, this The process can be omitted.
 
 ```console
-fpga@debian-fpga:~/debian$ sudo dpkg -i linux-image-6.12.100-armv7-fpga_6.12.100-armv7-fpga-1_armhf.deb
-(Reading database ... 30217 files and directories currently installed.)
-Preparing to unpack linux-image-6.12.100-armv7-fpga_6.12.100-armv7-fpga-1_armhf.deb ...
-Unpacking linux-image-6.12.100-armv7-fpga (6.12.100-armv7-fpga-1) over (6.12.100-armv7-fpga-1) ...
-Setting up linux-image-6.12.100-armv7-fpga (6.12.100-armv7-fpga-1) ...
+fpga@debian-fpga:~/debian$ sudo dpkg -i linux-image-6.12.115-armv7-fpga_6.12.115-armv7-fpga-1_armhf.deb
+(Reading database ... 50068 files and directories currently installed.)
+Preparing to unpack linux-image-6.12.115-armv7-fpga_6.12.115-armv7-fpga-1_armhf.deb ...
+Unpacking linux-image-6.12.115-armv7-fpga (6.12.115-armv7-fpga-1) over (6.12.115-armv7-fpga-1) ...
+Setting up linux-image-6.12.115-armv7-fpga (6.12.115-armv7-fpga-1) ...
 ```
 
 #### Install Kernel Header Packages
 
 ```console
-fpga@debian-fpga:~/debian$ sudo dpkg -i linux-headers-6.12.100-armv7-fpga_6.12.100-armv7-fpga-1_armhf.deb
-Selecting previously unselected package linux-headers-6.12.100-armv7-fpga.
-(Reading database ... 30217 files and directories currently installed.)
-Preparing to unpack linux-headers-6.12.100-armv7-fpga_6.12.100-armv7-fpga-1_armhf.deb ...
-Unpacking linux-headers-6.12.100-armv7-fpga (6.12.100-armv7-fpga-1) ...
-Setting up linux-headers-6.12.100-armv7-fpga (6.12.100-armv7-fpga-1) ...
-make: Entering directory '/usr/src/linux-headers-6.12.100-armv7-fpga'
+fpga@debian-fpga:~/debian$ sudo dpkg -i linux-headers-6.12.115-armv7-fpga_6.12.115-armv7-fpga-1_armhf.deb
+Selecting previously unselected package linux-headers-6.12.115-armv7-fpga.
+(Reading database ... 50068 files and directories currently installed.)
+Preparing to unpack linux-headers-6.12.115-armv7-fpga_6.12.115-armv7-fpga-1_armhf.deb ...
+Unpacking linux-headers-6.12.115-armv7-fpga (6.12.115-armv7-fpga-1) ...
+Setting up linux-headers-6.12.115-armv7-fpga (6.12.115-armv7-fpga-1) ...
+make: Entering directory '/usr/src/linux-headers-6.12.115-armv7-fpga'
   HOSTCC  scripts/basic/fixdep
   HOSTCC  scripts/dtc/dtc.o
   HOSTCC  scripts/dtc/flattree.o
@@ -80,41 +80,41 @@ make: Entering directory '/usr/src/linux-headers-6.12.100-armv7-fpga'
   HOSTCC  scripts/mod/sumversion.o
   HOSTCC  scripts/mod/symsearch.o
   HOSTLD  scripts/mod/modpost
-make: Leaving directory '/usr/src/linux-headers-6.12.100-armv7-fpga'
+make: Leaving directory '/usr/src/linux-headers-6.12.115-armv7-fpga'
 ```
 
 
 #### Install dtbocfg kernel module package
 
 ```console
-fpga@debian-fpga:~/debian$ sudo dpkg -i dtbocfg-6.12.100-armv7-fpga_0.1.0-1_armhf.deb
-Selecting previously unselected package dtbocfg-6.12.100-armv7-fpga.
-(Reading database ... 47837 files and directories currently installed.)
-Preparing to unpack dtbocfg-6.12.100-armv7-fpga_0.1.0-1_armhf.deb ...
-Unpacking dtbocfg-6.12.100-armv7-fpga (0.1.0-1) ...
-Setting up dtbocfg-6.12.100-armv7-fpga (0.1.0-1) ...
+fpga@debian-fpga:~/debian$ sudo dpkg -i dtbocfg-6.12.115-armv7-fpga_0.1.0-1_armhf.deb
+Selecting previously unselected package dtbocfg-6.12.115-armv7-fpga.
+(Reading database ... 67701 files and directories currently installed.)
+Preparing to unpack dtbocfg-6.12.115-armv7-fpga_0.1.0-1_armhf.deb ...
+Unpacking dtbocfg-6.12.115-armv7-fpga (0.1.0-1) ...
+Setting up dtbocfg-6.12.115-armv7-fpga (0.1.0-1) ...
 ```
 
 #### Install fclkcfg kernel module package
 
 ```console
-fpga@debian-fpga:~/debian$ sudo dpkg -i fclkcfg-6.12.100-armv7-fpga_1.9.1-1_armhf.deb
-Selecting previously unselected package fclkcfg-6.12.100-armv7-fpga.
-(Reading database ... 47843 files and directories currently installed.)
-Preparing to unpack fclkcfg-6.12.100-armv7-fpga_1.9.1-1_armhf.deb ...
-Unpacking fclkcfg-6.12.100-armv7-fpga (1.9.1-1) ...
-Setting up fclkcfg-6.12.100-armv7-fpga (1.9.1-1) ...
+fpga@debian-fpga:~/debian$ sudo dpkg -i fclkcfg-6.12.115-armv7-fpga_1.9.1-1_armhf.deb
+Selecting previously unselected package fclkcfg-6.12.115-armv7-fpga.
+(Reading database ... 67707 files and directories currently installed.)
+Preparing to unpack fclkcfg-6.12.115-armv7-fpga_1.9.1-1_armhf.deb ...
+Unpacking fclkcfg-6.12.115-armv7-fpga (1.9.1-1) ...
+Setting up fclkcfg-6.12.115-armv7-fpga (1.9.1-1) ...
 ```
 
 #### Install u-dma-buf kernel module package
 
 ```console
-fpga@debian-fpga:~/debian$ sudo dpkg -i u-dma-buf-6.12.100-armv7-fpga_5.5.0-0_armhf.deb
-Selecting previously unselected package u-dma-buf-6.12.100-armv7-fpga.
-(Reading database ... 47848 files and directories currently installed.)
-Preparing to unpack u-dma-buf-6.12.100-armv7-fpga_5.5.0-0_armhf.deb ...
-Unpacking u-dma-buf-6.12.100-armv7-fpga (5.5.0-0) ...
-Setting up u-dma-buf-6.12.100-armv7-fpga (5.5.0-0) ...
+fpga@debian-fpga:~/debian$ sudo dpkg -i u-dma-buf-6.12.115-armv7-fpga_5.7.1-0_armhf.deb
+Selecting previously unselected package u-dma-buf-6.12.115-armv7-fpga.
+(Reading database ... 67712 files and directories currently installed.)
+Preparing to unpack u-dma-buf-6.12.115-armv7-fpga_5.7.1-0_armhf.deb ...
+Unpacking u-dma-buf-6.12.115-armv7-fpga (5.7.1-0) ...
+Setting up u-dma-buf-6.12.115-armv7-fpga (5.7.1-0) ...
 ```
 
 #### Install zynq-afi kernel module package
@@ -122,12 +122,12 @@ Setting up u-dma-buf-6.12.100-armv7-fpga (5.5.0-0) ...
 This debian package only installs ZYNQ(ZYBO/ZYBO-Z7/PYNQ-Z1).
 
 ```console
-fpga@debian-fpga:~/debian$ sudo dpkg -i zynq-afi-6.12.100-armv7-fpga_0.0.1-0_armhf.deb
-Selecting previously unselected package zynq-afi-6.12.100-armv7-fpga.
-(Reading database ... 47854 files and directories currently installed.)
-Preparing to unpack zynq-afi-6.12.100-armv7-fpga_0.0.1-0_armhf.deb ...
-Unpacking zynq-afi-6.12.100-armv7-fpga (0.0.1-0) ...
-Setting up zynq-afi-6.12.100-armv7-fpga (0.0.1-0) ...
+fpga@debian-fpga:~/debian$ sudo dpkg -i zynq-afi-6.12.115-armv7-fpga_0.0.1-0_armhf.deb
+Selecting previously unselected package zynq-afi-6.12.115-armv7-fpga.
+(Reading database ... 67718 files and directories currently installed.)
+Preparing to unpack zynq-afi-6.12.115-armv7-fpga_0.0.1-0_armhf.deb ...
+Unpacking zynq-afi-6.12.115-armv7-fpga (0.0.1-0) ...
+Setting up zynq-afi-6.12.115-armv7-fpga (0.0.1-0) ...
 ```
 
 #### Install dtbocfg control package
@@ -157,13 +157,13 @@ dtbocfg                16384  0
 fpga@debian-fpga:~/debian$ sudo systemctl status device-tree-overlay.service --no-page -l
 ● device-tree-overlay.service - Device Tree Overlay Service.
      Loaded: loaded (/etc/systemd/system/device-tree-overlay.service; enabled; preset: enabled)
-     Active: active (exited) since Sat 2026-08-08 06:52:27 JST; 1min 26s ago
- Invocation: 2f2d6acd9c4442d2abd2c4300ee0f5bd
-    Process: 2253 ExecStart=/sbin/modprobe dtbocfg (code=exited, status=0/SUCCESS)
-   Main PID: 2253 (code=exited, status=0/SUCCESS)
-        CPU: 89ms
+     Active: active (exited) since Tue 2026-04-14 04:38:13 JST; 7 months 1 day ago
+ Invocation: 7b657ebdd581469f97730010eb5bc90d
+    Process: 1346 ExecStart=/sbin/modprobe dtbocfg (code=exited, status=0/SUCCESS)
+   Main PID: 1346 (code=exited, status=0/SUCCESS)
+        CPU: 96ms
 
-Aug 08 06:52:27 debian-fpga systemd[1]: Starting device-tree-overlay.service - Device Tree Overlay Service....
-Aug 08 06:52:27 debian-fpga systemd[1]: Finished device-tree-overlay.service - Device Tree Overlay Service..
+Apr 14 04:38:12 debian-fpga systemd[1]: Starting device-tree-overlay.service - Device Tree Overlay Service....
+Apr 14 04:38:13 debian-fpga systemd[1]: Finished device-tree-overlay.service - Device Tree Overlay Service..
 ```
 
