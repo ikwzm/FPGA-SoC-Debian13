@@ -29,14 +29,14 @@ This Repository provides a Linux Boot Image(U-boot, Kernel, Debian13 RootFS) for
   + Customized boot by uEnv.txt
   + Customized boot by boot.scr
   + Enable bootmenu
-* Linux Kernel Version v6.12.100
+* Linux Kernel Version v6.12.115
   + Available in both Xilinx-Zynq-7000 and Altera-SoC in a single image
   + Enable Device Tree Overlay
   + Enable FPGA Manager
   + Enable FPGA Bridge
   + Enable FPGA Reagion
   + Patch for issue #3(USB-HOST does not work with PYNQ-Z1)
-* Debian13.6(trixie) Root File System
+* Debian13.7(trixie) Root File System
   + Installed build-essential
   + Installed device-tree-compiler
   + Installed ruby ruby-msgpack ruby-serialport
@@ -67,6 +67,6 @@ Build
 * [Build U-boot for PYNQ-Z1](doc/build/u-boot-zynq-pynqz1.md)
 * [Build U-boot for DE0-Nano-SoC](doc/build/u-boot-de0-nano-soc.md)
 * [Build U-boot for DE10-Nano](doc/build/u-boot-de10-nano.md)
-* [Build Linux Kernel](doc/build/linux-kernel-6.12.100.md)
+* [Build Linux Kernel](doc/build/linux-kernel-6.12.115.md)
 * [Build Debian13 RootFS](doc/build/debian13-rootfs.md)
 
